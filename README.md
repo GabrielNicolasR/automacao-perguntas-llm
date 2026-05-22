@@ -1,34 +1,69 @@
-# Desafio Python - Integração com LLM (Groq)
+# Automação de Perguntas com LLM (Groq API) | LLM Question Automation (Groq API)
 
-Este projeto automatiza o processo de enviar perguntas para uma IA (Llama 3 via Groq API) e salvar as respostas em um arquivo CSV usando Pandas.
+[Português](#português) | [English](#english)
 
-## 📋 Objetivos cumpridos:
-1. Criar um arquivo `.txt` a partir de uma lista em Python.
-2. Ler as perguntas do `.txt` e salvá-las em uma lista.
-3. Obter respostas de um LLM para cada pergunta.
-4. Salvar os resultados em um arquivo `.csv`.
-5. Ler o arquivo `.csv` usando Pandas.
+---
 
-## 🚀 Como executar
+## Português
 
-1. **Instale as dependências:**
+### Descrição
+Este projeto automatiza o processo de gerar respostas para uma lista de perguntas pré-definidas utilizando a API do Groq (modelo Llama-3). O script lê as perguntas, consulta a IA para obter respostas curtas e diretas, e exporta o resultado final para um arquivo CSV.
+
+### Funcionalidades
+- **Leitura/Escrita:** Gerencia uma lista de perguntas em um arquivo de texto.
+- **Integração com LLM:** Utiliza o modelo `llama-3.3-70b-versatile` via Groq Cloud.
+- **Exportação:** Salva o par Pergunta/Resposta em um arquivo `resultado.csv` usando Pandas.
+
+### Pré-requisitos
+- Python 3.x
+- Uma chave de API do [Groq](https://console.groq.com/)
+
+### Instalação
+1. Clone o repositório.
+2. Instale as dependências:
    ```bash
    pip install -r requirements.txt
    ```
-
-2. **Configure sua API Key:**
-   Crie um arquivo `.env` na raiz do projeto e adicione sua chave da Groq:
+3. Crie um arquivo `.env` na raiz do projeto e adicione sua chave:
    ```env
    GROQ_API_KEY=sua_chave_aqui
    ```
 
-3. **Execute o script:**
+### Como usar
+Execute o script principal:
+```bash
+python app.py
+```
+
+---
+
+## English
+
+### Description
+This project automates the process of generating answers for a predefined list of questions using the Groq API (Llama-3 model). The script reads the questions, queries the AI for short and direct answers, and exports the final result to a CSV file.
+
+### Features
+- **Read/Write:** Manages a list of questions in a text file.
+- **LLM Integration:** Uses the `llama-3.3-70b-versatile` model via Groq Cloud.
+- **Export:** Saves Question/Answer pairs into a `resultado.csv` file using Pandas.
+
+### Prerequisites
+- Python 3.x
+- A [Groq](https://console.groq.com/) API Key
+
+### Installation
+1. Clone the repository.
+2. Install dependencies:
    ```bash
-   python app.py
+   pip install -r requirements.txt
+   ```
+3. Create a `.env` file in the project root and add your key:
+   ```env
+   GROQ_API_KEY=your_key_here
    ```
 
-## 🛠️ Tecnologias
-- Python
-- Pandas
-- Groq Cloud API
-- Python-dotenv
+### How to use
+Run the main script:
+```bash
+python app.py
+```
