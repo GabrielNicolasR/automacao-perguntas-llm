@@ -24,7 +24,7 @@ Este projeto automatiza o processo de gerar respostas para uma lista de pergunta
    ```bash
    pip install -r requirements.txt
    ```
-3. Crie um arquivo `.env` na raiz do projeto e adicione sua chave:
+3. Crie um arquivo `.env` baseado no `.env.example` e adicione sua chave:
    ```env
    GROQ_API_KEY=sua_chave_aqui
    ```
@@ -57,7 +57,7 @@ This project automates the process of generating answers for a predefined list o
    ```bash
    pip install -r requirements.txt
    ```
-3. Create a `.env` file in the project root and add your key:
+3. Create a `.env` file based on `.env.example` and add your key:
    ```env
    GROQ_API_KEY=your_key_here
    ```
